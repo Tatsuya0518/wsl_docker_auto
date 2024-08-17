@@ -20,7 +20,7 @@ fn main() {
     .args(&["--exec"])
     .args(&["docker"])
     .args(&["start"])
-    .args(&["macOS"]) //WSLにあるDockerの起動したいコンテナ名
+    .args(&["{Your_Dokcer_ContainerID or name}"]) //WSLにあるDockerの起動したいコンテナ名 {}は外して記述する。
     .spawn()
     .expect("failed to start `wsl`");
     
